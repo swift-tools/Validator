@@ -1,9 +1,9 @@
 # Validator 🛡️
 
-<!-- [![CI Status](https://img.shields.io/travis/lazymisu/swift-playground/Validator.svg?style=flat)](https://travis-ci.org/lazymisu/Validator)
-[![Version](https://img.shields.io/cocoapods/v/swift-playground/Validator.svg?style=flat)](https://cocoapods.org/pods/Validator)
-[![License](https://img.shields.io/cocoapods/l/swift-playground/Validator.svg?style=flat)](https://cocoapods.org/pods/Validator)
-[![Platform](https://img.shields.io/cocoapods/p/swift-playground/Validator.svg?style=flat)](https://cocoapods.org/pods/Validator) -->
+<!-- [![CI Status](https://img.shields.io/travis/lazymisu/Validator.svg?style=flat)](https://travis-ci.org/lazymisu/Validator)
+[![Version](https://img.shields.io/cocoapods/v/Validator.svg?style=flat)](https://cocoapods.org/pods/Validator)
+[![License](https://img.shields.io/cocoapods/l/Validator.svg?style=flat)](https://cocoapods.org/pods/Validator)
+[![Platform](https://img.shields.io/cocoapods/p/Validator.svg?style=flat)](https://cocoapods.org/pods/Validator) -->
 
 Validator is a Swift library that provides a simple yet flexible way to validate input fields using custom validation rules. It consists of a set of protocols and structs that define the validation rules and the validation results, and a main class that orchestrates the validation process.
 
@@ -30,7 +30,7 @@ To use Validator in your Swift project, you need to add it as a dependency in yo
 
 ```ruby
 target 'MyApp' do
-  pod 'swift-playground/Validator'
+  pod 'Validator'
 end
 ```
 
