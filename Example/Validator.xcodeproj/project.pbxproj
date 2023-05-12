@@ -16,6 +16,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		F4147AE22A0CDB6900DEDFCD /* ValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4147AE12A0CDB6900DEDFCD /* ValidatorTests.swift */; };
+		F46C50432A0DD2380027C2B2 /* ValidationRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46C50422A0DD2380027C2B2 /* ValidationRuleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		A9FCFA36EE7BF77E8E9A416F /* Pods_Validator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Validator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC003E05796C4F1FA7E55B13 /* Pods-Validator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Validator_Tests.release.xcconfig"; path = "Target Support Files/Pods-Validator_Tests/Pods-Validator_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F4147AE12A0CDB6900DEDFCD /* ValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorTests.swift; sourceTree = "<group>"; };
+		F46C50422A0DD2380027C2B2 /* ValidationRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationRuleTests.swift; sourceTree = "<group>"; };
 		F954DF896FBBE46FCB019B92 /* Validator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Validator.podspec; path = ../Validator.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
@@ -130,6 +132,7 @@
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				F4147AE12A0CDB6900DEDFCD /* ValidatorTests.swift */,
+				F46C50422A0DD2380027C2B2 /* ValidationRuleTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -342,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F46C50432A0DD2380027C2B2 /* ValidationRuleTests.swift in Sources */,
 				F4147AE22A0CDB6900DEDFCD /* ValidatorTests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);

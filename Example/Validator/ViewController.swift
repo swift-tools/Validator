@@ -17,8 +17,8 @@ class ViewController: UIViewController, LiveValidatedTextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        txtRequired.validator.addValidation(RequiredValidation())
-        txtEmail.validator.addValidation(EmailValidation())
+        txtRequired.validator.add(ValidationRule.Required())
+        txtEmail.validator.add(ValidationRule.Email())
         txtEmail.liveValidatedDelegate = self
     }
 

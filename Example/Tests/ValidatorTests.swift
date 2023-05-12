@@ -21,7 +21,7 @@ final class ValidatorTests: XCTestCase {
 
     func testIsNotValidResult() throws {
         let validator = Validator()
-        validator.addValidation(RequiredValidation())
+        validator.add(ValidationRule.Required())
         let sut = validator.validate("")
         XCTAssertFalse(sut.isValid)
         XCTAssertNotNil(sut.error)
@@ -29,7 +29,7 @@ final class ValidatorTests: XCTestCase {
     
     func testIsValidResult() throws {
         let validator = Validator()
-        validator.addValidation(RequiredValidation())
+        validator.add(ValidationRule.Required())
         let sut = validator.validate("Hello World!")
         XCTAssertTrue(sut.isValid)
         XCTAssertNil(sut.error)
@@ -37,8 +37,8 @@ final class ValidatorTests: XCTestCase {
     
     func testIsNotValidResultError() throws {
         let validator = Validator()
-        let required = RequiredValidation()
-        validator.addValidation(required)
+        let required = ValidationRule.Required()
+        validator.add(required)
         let result = validator.validate("")
         let sut = result.error!
         XCTAssertEqual(sut.errorKey, required.errorKey)
@@ -47,9 +47,9 @@ final class ValidatorTests: XCTestCase {
     
     func testIsNotValidResultCustomErrorMessage() throws {
         let validator = Validator()
-        let required = RequiredValidation()
+        let required = ValidationRule.Required()
         let customErrorMessage = "Custom error message!"
-        validator.addValidation(required, errorMessage: customErrorMessage)
+        validator.add(required, errorMessage: customErrorMessage)
         let result = validator.validate("")
         let sut = result.error!
         XCTAssertEqual(sut.errorMessage, customErrorMessage)

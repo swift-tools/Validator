@@ -39,7 +39,7 @@ public final class Validator {
     
     public init() { }
     
-    public func addValidation(_ validation: Validation, errorMessage: String? = nil) {
+    public func add(_ validation: Validation, errorMessage: String? = nil) {
         validations.append(validation)
         customErrorMessages[validation.errorKey] = errorMessage
     }
@@ -54,30 +54,5 @@ public final class Validator {
             }
         }
         return ValidationResult(isValid: true, error: nil)
-    }
-}
-
-public struct RequiredValidation: Validation {
-    public init() { }
-    
-    public var errorKey: String { "Required" }
-    
-    public var errorMessage: String { "This field is required." }
-    
-    public func validate(_ field: String) -> Bool {
-        return !field.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-    }
-}
-
-public struct EmailValidation: Validation {
-    public init() { }
-    
-    public var errorKey: String { "Email" }
-
-    public var errorMessage: String { "Please enter a valid email address." }
-
-    public func validate(_ field: String) -> Bool {
-        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        return NSPredicate(format:"SELF MATCHES %@", emailRegex).evaluate(with: field)
     }
 }
