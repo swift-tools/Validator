@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 public protocol ValidatableTextField {
-    var validator: Validator { get set }
+    var validator: Validator { get }
     func validate() -> ValidationResult
 }
 
@@ -30,7 +30,7 @@ public protocol LiveValidatedTextFieldDelegate: AnyObject {
 
 open class LiveValidatedTextField: ValidatedTextField {
     private var debounceTimer: Timer?
-    private var debounceInterval: TimeInterval = 2.0
+    private var debounceInterval: TimeInterval = 1.0
     
     public weak var liveValidatedDelegate: LiveValidatedTextFieldDelegate?
     
