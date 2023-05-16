@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Validator
 //
-//  Created by Felix Chacaltana on 05/11/2023.
-//  Copyright (c) 2023 Felix Chacaltana. All rights reserved.
+//  Created by lazymisu on 05/11/2023.
+//  Copyright (c) 2023 lazymisu. All rights reserved.
 //
 
 import UIKit
