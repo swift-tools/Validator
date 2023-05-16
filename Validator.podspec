@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Validator'
   s.version          = '0.1.0'
-  s.summary          = 'Validator is a Swift library that provides a simple yet flexible way to validate input fields using custom validation rules.'
+  s.summary          = 'Swift Tools Validator.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/lazymisu/Validator'
+  s.homepage         = 'https://github.com/swift-tools/Validator'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Felix Chacaltana' => 'felix.chacaltana.felix@gmail.com' }
-  s.source           = { :git => 'https://github.com/lazymisu/Validator.git', :tag => s.version.to_s }
+  s.author           = { 'lazymisu' }
+  s.source           = { :git => 'https://github.com/swift-tools/Validator.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.0'

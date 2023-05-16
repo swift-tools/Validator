@@ -2,7 +2,7 @@
 //  ValidatableTextField.swift
 //  Validator
 //
-//  Created by Felix Chacaltana on 11/05/23.
+//  Created by lazymisu on 11/05/23.
 //
 
 import Foundation
@@ -23,7 +23,7 @@ open class ValidatedTextField: UITextField, ValidatableTextField {
     public var validator: Validator = Validator()
 }
 
-public protocol LiveValidatedTextFieldDelegate: AnyObject {
+@objc public protocol LiveValidatedTextFieldDelegate: NSObjectProtocol {
     func validationSucceeded(for textField: UITextField)
     func validationFailed(for textField: UITextField, withError error: ValidationError)
 }
@@ -32,7 +32,7 @@ open class LiveValidatedTextField: ValidatedTextField {
     private var debounceTimer: Timer?
     private var debounceInterval: TimeInterval = 1.0
     
-    public weak var liveValidatedDelegate: LiveValidatedTextFieldDelegate?
+    @IBOutlet weak open var liveValidatedDelegate: LiveValidatedTextFieldDelegate?
     
     public required init?(coder: NSCoder) {
         super.init(coder: coder)

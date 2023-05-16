@@ -2,7 +2,7 @@
 //  Validator.swift
 //  Validator
 //
-//  Created by Felix Chacaltana on 11/05/23.
+//  Created by lazymisu on 11/05/23.
 //
 
 import Foundation
@@ -13,7 +13,7 @@ public protocol Validation {
     func validate(_ field: String) -> Bool
 }
 
-public struct ValidationResult {
+public class ValidationResult: NSObject {
     public let isValid: Bool
     public let error: ValidationError?
     
@@ -23,7 +23,7 @@ public struct ValidationResult {
     }
 }
 
-public struct ValidationError {
+public class ValidationError: NSObject {
     public let errorMessage: String
     public let errorKey: String
     

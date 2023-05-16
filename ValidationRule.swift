@@ -2,7 +2,7 @@
 //  ValidationRule.swift
 //  Validator
 //
-//  Created by Felix Chacaltana on 11/05/23.
+//  Created by lazymisu on 11/05/23.
 //
 
 import Foundation

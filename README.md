@@ -1,10 +1,5 @@
 # Validator 🛡️
 
-<!-- [![CI Status](https://img.shields.io/travis/lazymisu/Validator.svg?style=flat)](https://travis-ci.org/lazymisu/Validator)
-[![Version](https://img.shields.io/cocoapods/v/Validator.svg?style=flat)](https://cocoapods.org/pods/Validator)
-[![License](https://img.shields.io/cocoapods/l/Validator.svg?style=flat)](https://cocoapods.org/pods/Validator)
-[![Platform](https://img.shields.io/cocoapods/p/Validator.svg?style=flat)](https://cocoapods.org/pods/Validator) -->
-
 Validator is a Swift library that provides a simple yet flexible way to validate input fields using custom validation rules. It consists of a set of protocols and structs that define the validation rules and the validation results, and a main class that orchestrates the validation process.
 
 ## 🧪 Validations
@@ -69,10 +64,8 @@ By using these classes, you can easily validate user input in your app and provi
 
 ## Author
 
-👨‍💻 Felix Chacaltana
-
-📧 felix.chacaltana.felix@gmail.com
+👨‍💻 [lazymisu](https://github.com/lazymisu)
 
 ## License
 
-📝 Validator is available under the MIT license. See the LICENSE file for more info.
+📝 Validator is available under the MIT license. See the [LICENSE](https://github.com/swift-tools/Validator/LICENSE) file for more info.
