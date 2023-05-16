@@ -12,7 +12,7 @@ Here's an example of how to create a custom validation rule:
 struct MyValidationRule: Validation {
     var errorKey: String { "MyValidationRule" }
     var errorMessage: String { "This is not a valid input" }
-    public func validate(_ field: String) -> ValidationResult {
+    public func validate(_ field: String) -> Bool {
         // validation logic here
     }
 }
@@ -25,7 +25,7 @@ To use Validator in your Swift project, you need to add it as a dependency in yo
 
 ```ruby
 target 'MyApp' do
-  pod 'Validator'
+  pod 'Validator', :git => 'https://github.com/swift-tools/Validator.git'
 end
 ```
 
@@ -35,8 +35,8 @@ Then you can import Validator in your Swift code and start using it:
 import Validator
 
 let validator = Validator()
-validator.addValidation(LengthValidation(minLength: 3, maxLength: 10), errorMessage: "The field must be between 3 and 10 characters long")
-validator.addValidation(RegexValidation(pattern: "[a-zA-Z0-9]+"), errorMessage: "The field must contain only alphanumeric characters")
+validator.add(ValidationRule.Required())
+validator.add(ValidationRule.Regex("[a-zA-Z0-9]+"), errorMessage: "The field must contain only alphanumeric characters")
 let result = validator.validate("hello")
 if result.isValid {
     print("The field is valid ✅")
