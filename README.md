@@ -12,7 +12,7 @@ Here's an example of how to create a custom validation rule:
 struct MyValidationRule: Validation {
     var errorKey: String { "MyValidationRule" }
     var errorMessage: String { "This is not a valid input" }
-    public func validate(_ field: String) -> ValidationResult {
+    public func validate(_ field: String) -> Bool {
         // validation logic here
     }
 }
@@ -25,7 +25,7 @@ To use Validator in your Swift project, you need to add it as a dependency in yo
 
 ```ruby
 target 'MyApp' do
-  pod 'Validator'
+  pod 'Validator', :git => 'https://github.com/swift-tools/Validator.git'
 end
 ```
 
